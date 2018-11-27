@@ -15,7 +15,7 @@ The following command creates  a structure specified in template.json for your M
 ```
 python build.py -dir project_example/ -template_file  template.json
 ```
-An example of  structure of the template.json
+An example of  structure that can be defined in the template.json
 
 ```json
 {
@@ -96,4 +96,4 @@ luigi --module luigi_pipeline.evaluation_pipeline   GenerateData  --conf config_
 
 ## Authors
 
-     **Antonio Pentagi
+     **Antonio Penta
