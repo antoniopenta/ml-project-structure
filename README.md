@@ -55,6 +55,8 @@ An example of  structure that can be defined in the template.json
 
 In the folder pipeline_example, there is an dummy example of how to use Luigi pipeline for evaluating a KMeans algorithm.
 
+More info on the amazing framework Luigi ( or Gigino from friends in Naples) can be found here: https://github.com/spotify/luigi
+
 The main idea is to define the experiments using excel as follows:
 
 
@@ -96,4 +98,4 @@ luigi --module luigi_pipeline.evaluation_pipeline   GenerateData  --conf config_
 
 ## Authors
 
-     **Antonio Penta
+  Antonio Penta
