@@ -1,0 +1,65 @@
+{
+  "num_algorithm": 3,
+  "num_training_testing_validation":2,
+  "directory_training_suffix":"training",
+  "directory_testing_suffix":"testing",
+  "directory_validation_suffix":"validation",
+  "directory_algoritm_suffix": "algorithm",
+  "datasets": [
+    "dataset_1",
+    "dataset_2"
+  ],
+  "main_directories": [
+    "config_pipelines",
+    "data_experiments",
+    "@framework",
+    "@jupyter",
+    "@luigi_pipeline",
+    "scripts",
+    "sh_scripts",
+    "test",
+    "utility",
+    "notes",
+    "results_excel",
+    "experimental_settings"
+  ],
+  "sub_directories": [
+    {
+      "father": "config_pipelines",
+      "dirs": [
+        "directory_algoritm_suffix*num_algorithm",
+        "data_generation",
+        "data_processing",
+        "metrics"
+      ]
+    },
+        {
+      "father": "data_experiments",
+      "dirs": [
+        "directory_algoritm_suffix*num_algorithm",
+        "data_generation",
+        "data_processing",
+        "metrics"
+      ]
+    },
+    {
+      "father": "data_experiments/data_generation",
+      "dirs": [
+        "directory_training_suffix*num_training_testing_validation",
+        "directory_testing_suffix*num_training_testing_validation",
+        "directory_validation_suffix*num_training_testing_validation"
+
+      ]
+    },
+        {
+      "father": "data_experiments/data_processing",
+      "dirs": [
+        "directory_training_suffix*num_training_testing_validation",
+        "directory_testing_suffix*num_training_testing_validation",
+        "directory_validation_suffix*num_training_testing_validation"
+
+      ]
+    }
+
+  ]
+}
